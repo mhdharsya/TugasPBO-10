@@ -18,7 +18,8 @@ public class MemberGold extends Member implements CanRequestCicilan, CanRequestD
 
     @Override
     public Integer hitungCicilanPerBulan(Integer totalBelanja, Integer jumlahBulan) {
-        return hitungCicilanPerBulan(totalBelanja, jumlahBulan);
+        Integer cicilan = totalBelanja/jumlahBulan;
+        return cicilan;
     }
 
     @Override

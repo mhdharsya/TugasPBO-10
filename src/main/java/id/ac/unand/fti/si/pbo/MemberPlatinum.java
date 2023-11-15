@@ -43,7 +43,8 @@ public class MemberPlatinum extends Member implements CanDeposit, CanRequestCici
 
     @Override
     public Integer hitungCicilanPerBulan(Integer totalBelanja, Integer jumlahBulan) {
-        return hitungCicilanPerBulan(totalBelanja, jumlahBulan);
+        Integer cicilan = totalBelanja/jumlahBulan;
+        return cicilan;
     }
 
     @Override
